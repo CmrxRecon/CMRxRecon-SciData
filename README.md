@@ -4,17 +4,15 @@
 This repository provides the scripts for the paper "CMRxRecon: A publicly available k-space dataset and benchmark to advance deep learning for cardiac MRI".
 
 
-[Website](https://cmrxrecon.github.io/) |
 [Dataset](https://doi.org/10.7303/syn52965326) |
 [GitHub](https://github.com/CmrxRecon/CMRxRecon/) |
 [Publications](#Publication-references)
 
 ## Motivation
-This study aims to establish a platform for fast CMR image reconstruction and provide a benchmark dataset that enables the broad research community to promote advances in this area of research.
+This study aims to provide a benchmark dataset that enables the broad research community to promote advances in CMR image reconstruction research.
 
 ## Background
-Cardiac magnetic resonance imaging (CMR) has become an important imaging modality for diagnosing cardiac disease due to its superior soft tissue contrast and non-invasiveness. However, an inherent drawback of MRI is that the imaging speed is particularly slow, which will cause discomfort to patients and intr​oduce motion artifacts into images. CMR image reconstruction from highly under-sampled k-space (raw data) has become a hot topic in recent years.
-So far, a large number of AI-based image reconstruction algorithms have shown the potential to improve imaging performance through highly under-sampling data. However, the field of CMR reconstruction still lacks public, standardized, and high-quality datasets. To date, NYU Langone Health has released 'fastMRI' dataset, containing multi-channel knee and brain MRI raw data. However, these images are inadequate for 3D+1D (time domain) applications in cardiac imaging. The goal of establishing the 'CMRxRecon' dataset is to provide a platform that enables the broad research community to participate in this important work.
+Cardiac magnetic resonance imaging (CMR) has emerged as a valuable diagnostic tool for cardiac diseases. However, a significant drawback of CMR is its slow imaging speed, resulting in low patient throughput and compromised clinical diagnostic quality. The limited temporal resolution also causes patient discomfort and introduces artifacts in the images, further diminishing their overall quality and diagnostic value. There has been growing interest in deep learning-based CMR imaging algorithms that can reconstruct high-quality images from highly under-sampled k-space data. However, the development of deep learning methods requires large training datasets, which have so far not been made publicly available for CMR. To address this gap, we released a dataset that includes multi-contrast, multi-view, multi-slice and multi-coil CMR imaging data from 300 subjects. Imaging studies include cardiac cine and mapping sequences. The ‘CMRxRecon’ dataset contains raw k-space data and auto-calibration lines. All image qualities are sufficient for cardiac region segmentation and quantitative analysis. Scripts of state-of-the-art reconstruction algorithms were also provided as a point of reference. Our aim is to facilitate the advancement of state-of-the-art CMR image reconstruction by introducing standardized evaluation criteria and making the dataset freely accessible to the research community.
 
 This repository (GitHub) contains Matlab code for zero-filling, GRAPPA, and ESPIRiT methods.
 
@@ -31,11 +29,13 @@ General workflow to produce the ‘CMRxRecon’ dataset:
 
 
 ## Package Structure
-* `ReconCode`: contains reconstruction codes for zero-filling, GRAPPA, and ESPIRiT methods
-* 'DemoData': demo data for a single subject
+a)	'ReconCode ': contains parallel imaging reconstruction code;
+b)	'DemoData': contain one example data;
+c)	'Evaluation': contains image quality evaluation code.
+
 
 ## Contact
 The code is provided to support reproducible research. If the code is giving syntax error in your particular configuration or some files are missing then you may open an issue or email us at CMRxRecon@outlook.com
 
 ## Publication references
-To be public
+Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset. Synapse, https://doi.org/10.7303/syn52965326, 2023.
