@@ -38,4 +38,5 @@ c)	'Evaluation': contains image quality evaluation code.
 The code is provided to support reproducible research. If the code is giving syntax error in your particular configuration or some files are missing then you may open an issue or email us at CMRxRecon@outlook.com
 
 ## Publication references
-Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset. Synapse, https://doi.org/10.7303/syn52965326, 2023.
+1.Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset and benchmark to advance deep learning for cardiac MRI. Scientific Data, 2024, 11(1): 687.
+2.Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset. Synapse, https://doi.org/10.7303/syn52965326, 2023.
