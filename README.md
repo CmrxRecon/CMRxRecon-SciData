@@ -39,4 +39,5 @@ The code is provided to support reproducible research. If the code is giving syn
 
 ## Publication references
 1.Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset and benchmark to advance deep learning for cardiac MRI. Scientific Data, 2024, 11(1): 687.
+
 2.Wang C, Lyu J, Wang S, et al. CMRxRecon: A publicly available k-space dataset. Synapse, https://doi.org/10.7303/syn52965326, 2023.
